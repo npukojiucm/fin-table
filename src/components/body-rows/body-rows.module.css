@@ -1,0 +1,50 @@
+.bodyRow {
+  cursor: pointer;
+}
+
+.bodyRow th,
+.bodyRow td {
+  padding: 15px;
+  background-color: var(--color-light-gray);
+}
+
+.bodyRow th {
+  text-align: left;
+}
+
+.bodyRow td:nth-child(2) {
+  background-color: var(--color-light-blue);
+}
+
+.bodyRow td:nth-child(2),
+.bodyRow td:nth-child(4) {
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.bodyRow td:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodyRow td:nth-child(3).positive,
+.bodyRow td:nth-child(4).positive {
+
+  background-color: var(--color-light-green);
+}
+
+.bodyRow td:nth-child(3).negative,
+.bodyRow td:nth-child(4).negative {
+
+  background-color: var(--color-light-red);
+}
+
+.percentageNegative {
+  font-weight: bold;
+  color: var(--color-red);
+}
+
+.percentagePositive {
+  font-weight: bold;
+  color: var(--color-green);
+}

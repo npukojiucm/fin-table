@@ -1,0 +1,49 @@
+.subRow {
+  cursor: pointer;
+}
+
+.subRow th,
+.subRow td {
+  padding: 15px;
+  background-color: var(--color-light-gray);
+}
+
+.subRow th {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.subRow td:nth-child(2) {
+  background-color: var(--color-light-blue);
+}
+
+.subRow td:nth-child(2),
+.subRow td:nth-child(4) {
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.subRow td:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subRow td:nth-child(3).positive,
+.subRow td:nth-child(4).positive {
+  background-color: var(--color-light-green);
+}
+
+.subRow td:nth-child(3).negative,
+.subRow td:nth-child(4).negative {
+  background-color: var(--color-light-red);
+}
+
+.subRow .percentageNegative {
+  font-weight: bold;
+  color: var(--color-red);
+}
+
+.subRow .percentagePositive {
+  font-weight: bold;
+  color: var(--color-green);
+}
